@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Gruppo&family=Kumbh+Sans:wght@100..900&family=Marcellus+SC&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>SCH</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#albums">Albums</a></li>
+            <li><a href="#top">SCH</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <p class="title">SORTIE LE 19 MARS 2021</p>
+    <img class="couv" src="sch-jvlivs-tome-2-cover-1.jpg">
+
+    <h2 id="albums">Albums en vente</h2>
+
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-inner">
+
+                <div class="slide" style="transform: translateX(0%);">
+                    <img src="/album_a7.avif" alt="Album A7">
+                    <p class="info">Album A7
+                        <br>2016
+                        <br>14 titres
+                        <br>45€
+                        <br><button>Je veux!</button>
+                    </p>
+                </div>
+
+                <div class="slide" style="transform: translateX(0%);">
+                    <img src="/album_anarchie.avif" alt="Album Anarchie">
+                    <p class="info">Album Anarchie
+                        <br>2016
+                        <br>13 titres
+                        <br>45€
+                        <br><button>Je veux!</button>
+                    </p>
+                </div>
+
+                <div class="slide" style="transform: translateX(0%);">
+                    <img src="/album_deofavente.avif" alt="Album DeoFavente">
+                    <p class="info">Album Deo Favente
+                        <br>2021
+                        <br>16 titres
+                        <br>35€
+                        <br><button>Je veux!</button>
+                    </p>
+                </div>
+
+                <div class="slide" style="transform: translateX(0%);">
+                    <img src="/album_jvlivs.avif" alt="Album Jvlivs">
+                    <p class="info">Album Jvlivs II
+                        <br>2023
+                        <br>21 titres
+                        <br>45€
+                        <br><button>Je veux!</button>
+                    </p>
+                </div>
+
+                <div class="slide" style="transform: translateX(0%);">
+                    <img src="/album_rooftop.jpg" alt="Album Rooftop">
+                    <p class="info">Album Rooftop
+                        <br>2023
+                        <br>20 titres
+                        <br>45€
+                        <br><button>Je veux!</button>
+                    </p>
+                </div>
+
+                <div class="slide" style="transform: translateX(0%);">
+                    <img src="/album_autobahn.avif" alt="Album Autobahn">
+                    <p class="info">Album Autobahn
+                        <br>2023
+                        <br>17 titres
+                        <br>45€
+                        <br><button>Je veux!</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prev" class="direction"><img class="arrow" src="/left_arrow.png"></button>
+                <button id="next" class="direction"><img class="arrow" src="/right_arrow.png"></button>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </div>
+
+    <h2 id="contact">Contact</h2>
+    <h3 class="phrasecontact">Tu souhaites des infos? Tu as un problème à signaler? Ou tu souhaites faire une collab avec nous? N'hésite pas!
+    </h3>
+    <form method="post" action="mail.php">
+        <div class="formulaire">
+            <label for="nom">Nom :</label><input name="nom" id="nom" type="text" placeholder="Otto" required>
+            <br><label for="email">Email :</label><input id="email" name="email" type="email" placeholder="monadresse@mail.com"
+                required>
+            <br><label for="sujet">Sujet :</label><input id="sujet" name="sujet" type="text" placeholder="Indique un sujet" required>
+            <br><label for="message">Message :</label><textarea id="message" name="message" type="text"
+                placeholder="Tapez votre message ici.." required></textarea>
+            <br><input class="submit" type="submit" value="Envoyer">
+        </div>
+    </form>
+   
+    <h4>Site créer par Terrassier Thimothée</h4>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
